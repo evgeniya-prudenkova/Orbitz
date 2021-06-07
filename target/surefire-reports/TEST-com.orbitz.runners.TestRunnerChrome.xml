@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.orbitz.runners.TestRunnerChrome" time="80.343" tests="1" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="gopherProxySet" value="false"/>
+    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="sun.cpu.isalist" value=""/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/evgeniya/eclipse-workspace/Orbitz/target/test-classes:/Users/evgeniya/eclipse-workspace/Orbitz/target/classes:/Users/evgeniya/.m2/repository/org/seleniumhq/selenium/selenium-java/3.141.59/selenium-java-3.141.59.jar:/Users/evgeniya/.m2/repository/org/seleniumhq/selenium/selenium-api/3.141.59/selenium-api-3.141.59.jar:/Users/evgeniya/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/3.141.59/selenium-chrome-driver-3.141.59.jar:/Users/evgeniya/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/3.141.59/selenium-edge-driver-3.141.59.jar:/Users/evgeniya/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/3.141.59/selenium-firefox-driver-3.141.59.jar:/Users/evgeniya/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/3.141.59/selenium-ie-driver-3.141.59.jar:/Users/evgeniya/.m2/repository/org/seleniumhq/selenium/selenium-opera-driver/3.141.59/selenium-opera-driver-3.141.59.jar:/Users/evgeniya/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/3.141.59/selenium-remote-driver-3.141.59.jar:/Users/evgeniya/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/3.141.59/selenium-safari-driver-3.141.59.jar:/Users/evgeniya/.m2/repository/org/seleniumhq/selenium/selenium-support/3.141.59/selenium-support-3.141.59.jar:/Users/evgeniya/.m2/repository/net/bytebuddy/byte-buddy/1.8.15/byte-buddy-1.8.15.jar:/Users/evgeniya/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/Users/evgeniya/.m2/repository/com/google/guava/guava/25.0-jre/guava-25.0-jre.jar:/Users/evgeniya/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar:/Users/evgeniya/.m2/repository/org/checkerframework/checker-compat-qual/2.0.0/checker-compat-qual-2.0.0.jar:/Users/evgeniya/.m2/repository/com/google/errorprone/error_prone_annotations/2.1.3/error_prone_annotations-2.1.3.jar:/Users/evgeniya/.m2/repository/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.jar:/Users/evgeniya/.m2/repository/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14.jar:/Users/evgeniya/.m2/repository/com/squareup/okhttp3/okhttp/3.11.0/okhttp-3.11.0.jar:/Users/evgeniya/.m2/repository/com/squareup/okio/okio/1.14.0/okio-1.14.0.jar:/Users/evgeniya/.m2/repository/io/github/bonigarcia/webdrivermanager/4.2.2/webdrivermanager-4.2.2.jar:/Users/evgeniya/.m2/repository/org/slf4j/slf4j-api/1.7.30/slf4j-api-1.7.30.jar:/Users/evgeniya/.m2/repository/com/google/code/gson/gson/2.8.6/gson-2.8.6.jar:/Users/evgeniya/.m2/repository/org/apache/commons/commons-lang3/3.11/commons-lang3-3.11.jar:/Users/evgeniya/.m2/repository/org/apache/httpcomponents/client5/httpclient5/5.0.1/httpclient5-5.0.1.jar:/Users/evgeniya/.m2/repository/org/apache/httpcomponents/core5/httpcore5/5.0.1/httpcore5-5.0.1.jar:/Users/evgeniya/.m2/repository/org/apache/httpcomponents/core5/httpcore5-h2/5.0.1/httpcore5-h2-5.0.1.jar:/Users/evgeniya/.m2/repository/commons-codec/commons-codec/1.13/commons-codec-1.13.jar:/Users/evgeniya/.m2/repository/org/rauschig/jarchivelib/1.1.0/jarchivelib-1.1.0.jar:/Users/evgeniya/.m2/repository/org/apache/commons/commons-compress/1.20/commons-compress-1.20.jar:/Users/evgeniya/.m2/repository/org/jsoup/jsoup/1.13.1/jsoup-1.13.1.jar:/Users/evgeniya/.m2/repository/io/cucumber/cucumber-java/5.7.0/cucumber-java-5.7.0.jar:/Users/evgeniya/.m2/repository/io/cucumber/cucumber-core/5.7.0/cucumber-core-5.7.0.jar:/Users/evgeniya/.m2/repository/io/cucumber/cucumber-gherkin/5.7.0/cucumber-gherkin-5.7.0.jar:/Users/evgeniya/.m2/repository/io/cucumber/cucumber-gherkin-vintage/5.7.0/cucumber-gherkin-vintage-5.7.0.jar:/Users/evgeniya/.m2/repository/io/cucumber/tag-expressions/2.0.4/tag-expressions-2.0.4.jar:/Users/evgeniya/.m2/repository/io/cucumber/cucumber-expressions/8.3.1/cucumber-expressions-8.3.1.jar:/Users/evgeniya/.m2/repository/io/cucumber/datatable/3.3.1/datatable-3.3.1.jar:/Users/evgeniya/.m2/repository/io/cucumber/cucumber-plugin/5.7.0/cucumber-plugin-5.7.0.jar:/Users/evgeniya/.m2/repository/io/cucumber/docstring/5.7.0/docstring-5.7.0.jar:/Users/evgeniya/.m2/repository/org/apiguardian/apiguardian-api/1.1.0/apiguardian-api-1.1.0.jar:/Users/evgeniya/.m2/repository/io/cucumber/cucumber-junit/5.7.0/cucumber-junit-5.7.0.jar:/Users/evgeniya/.m2/repository/junit/junit/4.13/junit-4.13.jar:/Users/evgeniya/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/evgeniya/.m2/repository/commons-io/commons-io/2.8.0/commons-io-2.8.0.jar:"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="user.timezone" value=""/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_251.jdk/Contents/Home/jre/lib"/>
+    <property name="sun.java.command" value="/Users/evgeniya/eclipse-workspace/Orbitz/target/surefire/surefirebooter4796696969578996152.jar /Users/evgeniya/eclipse-workspace/Orbitz/target/surefire 2021-06-07T17-40-51_617-jvmRun2 surefire4908988368437201771tmp surefire_05222524106728184799tmp"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="surefire.test.class.path" value="/Users/evgeniya/eclipse-workspace/Orbitz/target/test-classes:/Users/evgeniya/eclipse-workspace/Orbitz/target/classes:/Users/evgeniya/.m2/repository/org/seleniumhq/selenium/selenium-java/3.141.59/selenium-java-3.141.59.jar:/Users/evgeniya/.m2/repository/org/seleniumhq/selenium/selenium-api/3.141.59/selenium-api-3.141.59.jar:/Users/evgeniya/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/3.141.59/selenium-chrome-driver-3.141.59.jar:/Users/evgeniya/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/3.141.59/selenium-edge-driver-3.141.59.jar:/Users/evgeniya/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/3.141.59/selenium-firefox-driver-3.141.59.jar:/Users/evgeniya/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/3.141.59/selenium-ie-driver-3.141.59.jar:/Users/evgeniya/.m2/repository/org/seleniumhq/selenium/selenium-opera-driver/3.141.59/selenium-opera-driver-3.141.59.jar:/Users/evgeniya/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/3.141.59/selenium-remote-driver-3.141.59.jar:/Users/evgeniya/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/3.141.59/selenium-safari-driver-3.141.59.jar:/Users/evgeniya/.m2/repository/org/seleniumhq/selenium/selenium-support/3.141.59/selenium-support-3.141.59.jar:/Users/evgeniya/.m2/repository/net/bytebuddy/byte-buddy/1.8.15/byte-buddy-1.8.15.jar:/Users/evgeniya/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/Users/evgeniya/.m2/repository/com/google/guava/guava/25.0-jre/guava-25.0-jre.jar:/Users/evgeniya/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar:/Users/evgeniya/.m2/repository/org/checkerframework/checker-compat-qual/2.0.0/checker-compat-qual-2.0.0.jar:/Users/evgeniya/.m2/repository/com/google/errorprone/error_prone_annotations/2.1.3/error_prone_annotations-2.1.3.jar:/Users/evgeniya/.m2/repository/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.jar:/Users/evgeniya/.m2/repository/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14.jar:/Users/evgeniya/.m2/repository/com/squareup/okhttp3/okhttp/3.11.0/okhttp-3.11.0.jar:/Users/evgeniya/.m2/repository/com/squareup/okio/okio/1.14.0/okio-1.14.0.jar:/Users/evgeniya/.m2/repository/io/github/bonigarcia/webdrivermanager/4.2.2/webdrivermanager-4.2.2.jar:/Users/evgeniya/.m2/repository/org/slf4j/slf4j-api/1.7.30/slf4j-api-1.7.30.jar:/Users/evgeniya/.m2/repository/com/google/code/gson/gson/2.8.6/gson-2.8.6.jar:/Users/evgeniya/.m2/repository/org/apache/commons/commons-lang3/3.11/commons-lang3-3.11.jar:/Users/evgeniya/.m2/repository/org/apache/httpcomponents/client5/httpclient5/5.0.1/httpclient5-5.0.1.jar:/Users/evgeniya/.m2/repository/org/apache/httpcomponents/core5/httpcore5/5.0.1/httpcore5-5.0.1.jar:/Users/evgeniya/.m2/repository/org/apache/httpcomponents/core5/httpcore5-h2/5.0.1/httpcore5-h2-5.0.1.jar:/Users/evgeniya/.m2/repository/commons-codec/commons-codec/1.13/commons-codec-1.13.jar:/Users/evgeniya/.m2/repository/org/rauschig/jarchivelib/1.1.0/jarchivelib-1.1.0.jar:/Users/evgeniya/.m2/repository/org/apache/commons/commons-compress/1.20/commons-compress-1.20.jar:/Users/evgeniya/.m2/repository/org/jsoup/jsoup/1.13.1/jsoup-1.13.1.jar:/Users/evgeniya/.m2/repository/io/cucumber/cucumber-java/5.7.0/cucumber-java-5.7.0.jar:/Users/evgeniya/.m2/repository/io/cucumber/cucumber-core/5.7.0/cucumber-core-5.7.0.jar:/Users/evgeniya/.m2/repository/io/cucumber/cucumber-gherkin/5.7.0/cucumber-gherkin-5.7.0.jar:/Users/evgeniya/.m2/repository/io/cucumber/cucumber-gherkin-vintage/5.7.0/cucumber-gherkin-vintage-5.7.0.jar:/Users/evgeniya/.m2/repository/io/cucumber/tag-expressions/2.0.4/tag-expressions-2.0.4.jar:/Users/evgeniya/.m2/repository/io/cucumber/cucumber-expressions/8.3.1/cucumber-expressions-8.3.1.jar:/Users/evgeniya/.m2/repository/io/cucumber/datatable/3.3.1/datatable-3.3.1.jar:/Users/evgeniya/.m2/repository/io/cucumber/cucumber-plugin/5.7.0/cucumber-plugin-5.7.0.jar:/Users/evgeniya/.m2/repository/io/cucumber/docstring/5.7.0/docstring-5.7.0.jar:/Users/evgeniya/.m2/repository/org/apiguardian/apiguardian-api/1.1.0/apiguardian-api-1.1.0.jar:/Users/evgeniya/.m2/repository/io/cucumber/cucumber-junit/5.7.0/cucumber-junit-5.7.0.jar:/Users/evgeniya/.m2/repository/junit/junit/4.13/junit-4.13.jar:/Users/evgeniya/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/evgeniya/.m2/repository/commons-io/commons-io/2.8.0/commons-io-2.8.0.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/Users/evgeniya"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_251.jdk/Contents/Home/jre"/>
+    <property name="basedir" value="/Users/evgeniya/eclipse-workspace/Orbitz"/>
+    <property name="file.separator" value="/"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="/Users/evgeniya/eclipse-workspace/Orbitz/target/surefire/surefirebooter4796696969578996152.jar"/>
+    <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_251.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_251.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_251.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_251.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_251.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_251.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_251.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_251.jdk/Contents/Home/jre/classes"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.runtime.version" value="1.8.0_251-b08"/>
+    <property name="user.name" value="evgeniya"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="10.16"/>
+    <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_251.jdk/Contents/Home/jre/lib/endorsed"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="/Users/evgeniya/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="/var/folders/qz/8ytd8bw52kv5yxcm_fn0fpt80000gp/T/"/>
+    <property name="idea.version" value="2021.1.1"/>
+    <property name="java.version" value="1.8.0_251"/>
+    <property name="user.dir" value="/Users/evgeniya/eclipse-workspace/Orbitz"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.library.path" value="/Users/evgeniya/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="25.251-b08"/>
+    <property name="java.ext.dirs" value="/Users/evgeniya/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_251.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+  </properties>
+  <testcase name="Flight Booking Verification(Flight Booking Functionality " classname="Chrome)" time="80.008">
+    <system-out><![CDATA[
+@chrome
+Scenario: Flight Booking Verification                                                                                                    &amp#27;[90m# src/test/resources/features/flightBooking.feature:6&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mclick on Flights button&amp#27;[0m                                                                                                           &amp#27;[90m# com.orbitz.steps.HomePageSteps.click_on_Flights_button()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mclick on Roundtrip button&amp#27;[0m                                                                                                          &amp#27;[90m# com.orbitz.steps.HomePageSteps.click_on_Roundtrip_button()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mclick on Leaving From button&amp#27;[0m                                                                                                       &amp#27;[90m# com.orbitz.steps.HomePageSteps.click_on_Leaving_From_button()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32minput text &amp#27;[0m&amp#27;[32m&amp#27;[1m"San Francisco (SFO - San Francisco Intl.)"&amp#27;[0m&amp#27;[32m into text field by id &amp#27;[0m&amp#27;[32m&amp#27;[1m"location-field-leg1-origin"&amp#27;[0m&amp#27;[32m and press enter&amp#27;[0m          &amp#27;[90m# com.orbitz.steps.HomePageSteps.input_text_into_text_field_by_id_and_press_enter(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mclick on Going To button&amp#27;[0m                                                                                                           &amp#27;[90m# com.orbitz.steps.HomePageSteps.click_on_Going_To_button()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32minput text &amp#27;[0m&amp#27;[32m&amp#27;[1m"New York (JFK - John F. Kennedy Intl.)"&amp#27;[0m&amp#27;[32m into text field by id &amp#27;[0m&amp#27;[32m&amp#27;[1m"location-field-leg1-destination"&amp#27;[0m&amp#27;[32m and press enter&amp#27;[0m        &amp#27;[90m# com.orbitz.steps.HomePageSteps.input_text_into_text_field_by_id_and_press_enter(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mclick by id &amp#27;[0m&amp#27;[32m&amp#27;[1m"d1-btn"&amp#27;[0m                                                                                                               &amp#27;[90m# com.orbitz.steps.HomePageSteps.click_by_id(java.lang.String)&amp#27;[0m
+---> calendarMonthText: June 2021
+--->   GlobalVariables.departingDate: Jun 21
+--->   GlobalVariables.departingDate2: 6/21/2021
+---> calendarMonthText: June 2021
+---> GlobalVariables.returningDate: Jun 28
+---> GlobalVariables.returningDate2: 6/28/2021
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mSelect Departing date to be &amp#27;[0m&amp#27;[32m&amp#27;[1m2&amp#27;[0m&amp#27;[32m weeks from today and Returning date to be &amp#27;[0m&amp#27;[32m&amp#27;[1m3&amp#27;[0m&amp#27;[32m weeks from today&amp#27;[0m                                         &amp#27;[90m# com.orbitz.steps.HomePageSteps.select_Departing_date_to_be_weeks_from_today_and_Returning_date_to_be_weeks_from_today(int,int)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mclick on Search button&amp#27;[0m                                                                                                             &amp#27;[90m# com.orbitz.steps.HomePageSteps.click_on_Search_button()&amp#27;[0m
+---> textFlyingFrom: San Francisco, CA (SFO-San Francisco Intl.)
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mverify text field Flying From contains text&amp#27;[0m                                                                                       &amp#27;[90m# com.orbitz.steps.FlightsSearchSteps.verify_text_field_Flying_From_contains_text(io.cucumber.datatable.DataTable)&amp#27;[0m
+---> textFlyingFrom: New York, NY (JFK-John F. Kennedy Intl.)
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mverify text field Flying To contains text&amp#27;[0m                                                                                         &amp#27;[90m# com.orbitz.steps.FlightsSearchSteps.verify_text_field_Flying_To_contains_text(io.cucumber.datatable.DataTable)&amp#27;[0m
+---> Departing date: Jun 21
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mverify text field with id contains expected departing data&amp#27;[0m                                                                        &amp#27;[90m# com.orbitz.steps.FlightsSearchSteps.verify_text_field_with_id_contains_expected_departing_data(io.cucumber.datatable.DataTable)&amp#27;[0m
+---> Departing date: Jun 28
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mverify text field with id contains expected returning data&amp#27;[0m                                                                        &amp#27;[90m# com.orbitz.steps.FlightsSearchSteps.verify_text_field_with_id_contains_expected_returning_data(io.cucumber.datatable.DataTable)&amp#27;[0m
+---> result: San Fr... (SFO) - New York (JFK)
+---> size: 25
+---> result: San Fr... (SFO) - New York (JFK)
+---> size: 25
+---> result: San Fr... (SFO) - New York (JFK)
+---> size: 25
+---> result: San Fr... (SFO) - New York (JFK)
+---> size: 25
+---> result: San Fr... (SFO) - New York (JFK)
+---> size: 25
+---> result: San Fr... (SFO) - New York (JFK)
+---> size: 25
+---> result: San Fr... (SFO) - New York (JFK)
+---> size: 25
+---> result: San Fr... (SFO) - New York (JFK)
+---> size: 25
+---> result: San Fr... (SFO) - New York (JFK)
+---> size: 25
+---> result: San Fr... (SFO) - New York (JFK)
+---> size: 25
+---> result: San Fr... (SFO) - New York (JFK)
+---> size: 25
+---> result: San Fr... (SFO) - New York (JFK)
+---> size: 25
+---> result: San Fr... (SFO) - New York (JFK)
+---> size: 25
+---> result: San Fr... (SFO) - New York (JFK)
+---> size: 25
+---> result: San Fr... (SFO) - New York (JFK)
+---> size: 25
+---> result: San Fr... (SFO) - New York (JFK)
+---> size: 25
+---> result: San Fr... (SFO) - New York (JFK)
+---> size: 25
+---> result: San Fr... (SFO) - New York (JFK)
+---> size: 25
+---> result: San Fr... (SFO) - New York (JFK)
+---> size: 25
+---> result: San Fr... (SFO) - New York (JFK)
+---> size: 25
+---> result: San Fr... (SFO) - New York (JFK)
+---> size: 25
+---> result: San Fr... (SFO) - New York (JFK)
+---> size: 25
+---> result: San Fr... (SFO) - New York (JFK)
+---> size: 25
+---> result: San Fr... (SFO) - New York (JFK)
+---> size: 25
+---> result: San Fr... (SFO) - New York (JFK)
+---> size: 25
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mverify all flights in result search contain text&amp#27;[0m                                                                                  &amp#27;[90m# com.orbitz.steps.FlightsSearchSteps.verify_all_flights_in_result_search_contain_text(io.cucumber.datatable.DataTable)&amp#27;[0m
+Checkbox clicked
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mselect checkbox by id - &amp#27;[0m&amp#27;[32m&amp#27;[1mtrue&amp#27;[0m                                                                                                       &amp#27;[90m# com.orbitz.steps.FlightsSearchSteps.select_checkbox_by_id_true(java.lang.Boolean,io.cucumber.datatable.DataTable)&amp#27;[0m
+Wait for 7000 milliseconds
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mwait for &amp#27;[0m&amp#27;[32m&amp#27;[1m7000&amp#27;[0m&amp#27;[32m milliseconds&amp#27;[0m                                                                                                         &amp#27;[90m# com.orbitz.steps.FlightsSearchSteps.wait_for_milliseconds(int)&amp#27;[0m
+---> I am in Select
+---> Price dd: Price (Lowest)
+---> Price dd: Price (Highest)
+---> I am in If Price dd: Price (Highest)
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mselect dropdown value by &amp#27;[0m&amp#27;[32m&amp#27;[1m"Price (Highest)"&amp#27;[0m                                                                                         &amp#27;[90m# com.orbitz.steps.FlightsSearchSteps.select_dropdown_value_by(java.lang.String)&amp#27;[0m
+Wait for 7000 milliseconds
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mwait for &amp#27;[0m&amp#27;[32m&amp#27;[1m7000&amp#27;[0m&amp#27;[32m milliseconds&amp#27;[0m                                                                                                         &amp#27;[90m# com.orbitz.steps.FlightsSearchSteps.wait_for_milliseconds(int)&amp#27;[0m
+!!!!!!!!!!!!!!!!!!
+click good
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mselect first flight from the list&amp#27;[0m                                                                                                  &amp#27;[90m# com.orbitz.steps.FlightsSearchSteps.select_first_flight_from_the_list()&amp#27;[0m
+---> GlobalVariables.priceTripTotalFromFlightSearchPage: $4,294.10
+---> getText(flightsSearchPage.priceTripTotal): $4,294.10
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mclick on Continue Select this fare button&amp#27;[0m                                                                                          &amp#27;[90m# com.orbitz.steps.FlightsSearchSteps.click_on_Continue_Select_this_fare_button()&amp#27;[0m
+Wait for 7000 milliseconds
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mwait for &amp#27;[0m&amp#27;[32m&amp#27;[1m7000&amp#27;[0m&amp#27;[32m milliseconds&amp#27;[0m                                                                                                         &amp#27;[90m# com.orbitz.steps.FlightsSearchSteps.wait_for_milliseconds(int)&amp#27;[0m
+Wait for 7000 milliseconds
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mwait for &amp#27;[0m&amp#27;[32m&amp#27;[1m7000&amp#27;[0m&amp#27;[32m milliseconds&amp#27;[0m                                                                                                         &amp#27;[90m# com.orbitz.steps.FlightsSearchSteps.wait_for_milliseconds(int)&amp#27;[0m
+!!!!!!!!!!!!!!!!!!
+click good
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mselect first flight from the list&amp#27;[0m                                                                                                  &amp#27;[90m# com.orbitz.steps.FlightsSearchSteps.select_first_flight_from_the_list()&amp#27;[0m
+---> GlobalVariables.priceTripTotalFromFlightSearchPage: $4,294.10
+---> getText(flightsSearchPage.priceTripTotal): $4,294.10
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mclick on Continue Select this fare button&amp#27;[0m                                                                                          &amp#27;[90m# com.orbitz.steps.FlightsSearchSteps.click_on_Continue_Select_this_fare_button()&amp#27;[0m
+Wait for 7000 milliseconds
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mwait for &amp#27;[0m&amp#27;[32m&amp#27;[1m7000&amp#27;[0m&amp#27;[32m milliseconds&amp#27;[0m                                                                                                         &amp#27;[90m# com.orbitz.steps.FlightsSearchSteps.wait_for_milliseconds(int)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mswitch to new window&amp#27;[0m                                                                                                               &amp#27;[90m# com.orbitz.steps.FlightInformationSteps.switch_to_new_window()&amp#27;[0m
+---> flightInformationPage.departingDate.getText(): American Airlines • Mon, Jun 21
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mverify Departing date&amp#27;[0m                                                                                                             &amp#27;[90m# com.orbitz.steps.FlightInformationSteps.verify_Departing_date()&amp#27;[0m
+---> flightInformationPage.returningDate.getText(): American Airlines • Mon, Jun 28
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mverify Returning date&amp#27;[0m                                                                                                             &amp#27;[90m# com.orbitz.steps.FlightInformationSteps.verify_Returning_date()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mclick on Show details in departing section&amp#27;[0m                                                                                        &amp#27;[90m# com.orbitz.steps.FlightInformationSteps.click_on_Show_details_in_departing_section()&amp#27;[0m
+Wait for 7000 milliseconds
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mwait for &amp#27;[0m&amp#27;[32m&amp#27;[1m7000&amp#27;[0m&amp#27;[32m milliseconds&amp#27;[0m                                                                                                         &amp#27;[90m# com.orbitz.steps.FlightsSearchSteps.wait_for_milliseconds(int)&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mverify departure airport is &amp#27;[0m&amp#27;[32m&amp#27;[1m"San Francisco Intl. (SFO)"&amp#27;[0m&amp#27;[32m and arrival airport is &amp#27;[0m&amp#27;[32m&amp#27;[1m"John F. Kennedy Intl. (JFK)"&amp#27;[0m&amp#27;[32m in departing section&amp#27;[0m &amp#27;[90m# com.orbitz.steps.FlightInformationSteps.verify_departure_airport_is_and_arrival_airport_is_in_departing_section(java.lang.String,java.lang.String)&amp#27;[0m
+---> GlobalVariables.priceTripTotalFromFlightSearchPage: $4,294.10
+---> flightInformationPage.priceTripTotal: $4,294.10
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mverify Trip total price&amp#27;[0m                                                                                                           &amp#27;[90m# com.orbitz.steps.FlightInformationSteps.verify_Trip_total_price()&amp#27;[0m
+
+    Embedding Flight Booking Verification [image/png 274200 bytes]
+
+]]></system-out>
+    <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Starting ChromeDriver 91.0.4472.19 (1bf021f248676a0b2ab3ee0561d83a59e424c23e-refs/branch-heads/4472@{#288}) on port 48504
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Jun 07, 2021 5:40:54 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+</testsuite>

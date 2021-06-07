@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.tablesorter.min.js"></script>
+<script src="js/Chart.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script>
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<title>Cucumber Reports (no 1) - Steps Overview</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+        <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation"     class="active" ><a href="overview-steps.html">Steps</a></li>
+        <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+        <th>Number</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>Orbitz</td>
+        <td>1</td>
+      <td>07 Jun 2021, 17:45</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+  </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Steps Statistics</h2>
+      <p>The following graph shows step statistics for this build. Below list is based on results.
+ step does not provide information about result then is not listed below.
+ Additionally @Before and @After are not counted because they are part of the scenarios, not steps.</p>
+  </div>
+</div>
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table id="tablesorter" class="stats-table table-hover">
+
+        <thead>
+          <tr class="header">
+            <th>Implementation</th>
+            <th>Occurrences</th>
+            <th>Average duration</th>
+            <th>Max duration</th>
+            <th>Total durations</th>
+            <th>Ratio</th>
+          </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+              <td class="location">com.orbitz.steps.FlightInformationSteps.click_on_Show_details_in_departing_section()</td>
+              <td>2</td>
+              <td class="duration" data-value="49500000">0.049</td>
+              <td class="duration" data-value="49500000">0.098</td>
+              <td class="duration" data-value="99000000">0.099</td>
+              <td class="failed">50.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.orbitz.steps.FlightInformationSteps.switch_to_new_window()</td>
+              <td>2</td>
+              <td class="duration" data-value="7500000">0.007</td>
+              <td class="duration" data-value="7500000">0.009</td>
+              <td class="duration" data-value="15000000">0.015</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.orbitz.steps.FlightInformationSteps.verify_Departing_date()</td>
+              <td>2</td>
+              <td class="duration" data-value="15328500000">15.328</td>
+              <td class="duration" data-value="15328500000">30.572</td>
+              <td class="duration" data-value="30657000000">30.657</td>
+              <td class="failed">50.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.orbitz.steps.FlightInformationSteps.verify_Returning_date()</td>
+              <td>2</td>
+              <td class="duration" data-value="30000000">0.030</td>
+              <td class="duration" data-value="30000000">0.059</td>
+              <td class="duration" data-value="60000000">0.060</td>
+              <td class="failed">50.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.orbitz.steps.FlightInformationSteps.verify_Trip_total_price()</td>
+              <td>2</td>
+              <td class="duration" data-value="29500000">0.029</td>
+              <td class="duration" data-value="29500000">0.059</td>
+              <td class="duration" data-value="59000000">0.059</td>
+              <td class="failed">50.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.orbitz.steps.FlightInformationSteps.verify_departure_airport_is_and_arrival_airport_is_in_departing_section(java.lang.String,java.lang.String)</td>
+              <td>2</td>
+              <td class="duration" data-value="37500000">0.037</td>
+              <td class="duration" data-value="37500000">0.074</td>
+              <td class="duration" data-value="75000000">0.075</td>
+              <td class="failed">50.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.orbitz.steps.FlightsSearchSteps.click_on_Continue_Select_this_fare_button()</td>
+              <td>4</td>
+              <td class="duration" data-value="10406500000">10.406</td>
+              <td class="duration" data-value="10406500000">20.160</td>
+              <td class="duration" data-value="41626000000">41.626</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.orbitz.steps.FlightsSearchSteps.select_checkbox_by_id_true(java.lang.Boolean,io.cucumber.datatable.DataTable)</td>
+              <td>2</td>
+              <td class="duration" data-value="5264500000">5.264</td>
+              <td class="duration" data-value="5264500000">10.399</td>
+              <td class="duration" data-value="10529000000">10.529</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.orbitz.steps.FlightsSearchSteps.select_dropdown_value_by(java.lang.String)</td>
+              <td>2</td>
+              <td class="duration" data-value="5160000000">5.160</td>
+              <td class="duration" data-value="5160000000">10.120</td>
+              <td class="duration" data-value="10320000000">10.320</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.orbitz.steps.FlightsSearchSteps.select_first_flight_from_the_list()</td>
+              <td>4</td>
+              <td class="duration" data-value="15123750000">15.123</td>
+              <td class="duration" data-value="15123750000">30.102</td>
+              <td class="duration" data-value="60495000000">1:0.495</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.orbitz.steps.FlightsSearchSteps.verify_all_flights_in_result_search_contain_text(io.cucumber.datatable.DataTable)</td>
+              <td>2</td>
+              <td class="duration" data-value="7299000000">7.299</td>
+              <td class="duration" data-value="7299000000">13.549</td>
+              <td class="duration" data-value="14598000000">14.598</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.orbitz.steps.FlightsSearchSteps.verify_text_field_Flying_From_contains_text(io.cucumber.datatable.DataTable)</td>
+              <td>2</td>
+              <td class="duration" data-value="5132000000">5.132</td>
+              <td class="duration" data-value="5132000000">10.140</td>
+              <td class="duration" data-value="10264000000">10.264</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.orbitz.steps.FlightsSearchSteps.verify_text_field_Flying_To_contains_text(io.cucumber.datatable.DataTable)</td>
+              <td>2</td>
+              <td class="duration" data-value="5065000000">5.065</td>
+              <td class="duration" data-value="5065000000">10.053</td>
+              <td class="duration" data-value="10130000000">10.130</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.orbitz.steps.FlightsSearchSteps.verify_text_field_with_id_contains_expected_departing_data(io.cucumber.datatable.DataTable)</td>
+              <td>2</td>
+              <td class="duration" data-value="15074000000">15.074</td>
+              <td class="duration" data-value="15074000000">20.072</td>
+              <td class="duration" data-value="30148000000">30.148</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.orbitz.steps.FlightsSearchSteps.verify_text_field_with_id_contains_expected_returning_data(io.cucumber.datatable.DataTable)</td>
+              <td>2</td>
+              <td class="duration" data-value="15086500000">15.086</td>
+              <td class="duration" data-value="15086500000">20.072</td>
+              <td class="duration" data-value="30173000000">30.173</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.orbitz.steps.FlightsSearchSteps.wait_for_milliseconds(int)</td>
+              <td>12</td>
+              <td class="duration" data-value="6420083333">6.420</td>
+              <td class="duration" data-value="6420083333">7.006</td>
+              <td class="duration" data-value="77041000000">1:17.041</td>
+              <td class="failed">91.67%</td>
+            </tr>
+            <tr>
+              <td class="location">com.orbitz.steps.HomePageSteps.click_by_id(java.lang.String)</td>
+              <td>2</td>
+              <td class="duration" data-value="236500000">0.236</td>
+              <td class="duration" data-value="236500000">0.316</td>
+              <td class="duration" data-value="473000000">0.473</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.orbitz.steps.HomePageSteps.click_on_Flights_button()</td>
+              <td>2</td>
+              <td class="duration" data-value="615500000">0.615</td>
+              <td class="duration" data-value="615500000">1.033</td>
+              <td class="duration" data-value="1231000000">1.231</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.orbitz.steps.HomePageSteps.click_on_Going_To_button()</td>
+              <td>2</td>
+              <td class="duration" data-value="271500000">0.271</td>
+              <td class="duration" data-value="271500000">0.337</td>
+              <td class="duration" data-value="543000000">0.543</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.orbitz.steps.HomePageSteps.click_on_Leaving_From_button()</td>
+              <td>2</td>
+              <td class="duration" data-value="201500000">0.201</td>
+              <td class="duration" data-value="201500000">0.293</td>
+              <td class="duration" data-value="403000000">0.403</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.orbitz.steps.HomePageSteps.click_on_Roundtrip_button()</td>
+              <td>2</td>
+              <td class="duration" data-value="286500000">0.286</td>
+              <td class="duration" data-value="286500000">0.485</td>
+              <td class="duration" data-value="573000000">0.573</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.orbitz.steps.HomePageSteps.click_on_Search_button()</td>
+              <td>2</td>
+              <td class="duration" data-value="1919500000">1.919</td>
+              <td class="duration" data-value="1919500000">2.719</td>
+              <td class="duration" data-value="3839000000">3.839</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.orbitz.steps.HomePageSteps.input_text_into_text_field_by_id_and_press_enter(java.lang.String,java.lang.String)</td>
+              <td>4</td>
+              <td class="duration" data-value="494250000">0.494</td>
+              <td class="duration" data-value="494250000">0.574</td>
+              <td class="duration" data-value="1977000000">1.977</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.orbitz.steps.HomePageSteps.select_Departing_date_to_be_weeks_from_today_and_Returning_date_to_be_weeks_from_today(int,int)</td>
+              <td>2</td>
+              <td class="duration" data-value="1335500000">1.335</td>
+              <td class="duration" data-value="1335500000">1.463</td>
+              <td class="duration" data-value="2671000000">2.671</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.orbitz.steps.Hooks.endTest(io.cucumber.java.Scenario)</td>
+              <td>2</td>
+              <td class="duration" data-value="948500000">0.948</td>
+              <td class="duration" data-value="948500000">1.005</td>
+              <td class="duration" data-value="1897000000">1.897</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.orbitz.steps.Hooks.startTestChrome()</td>
+              <td>1</td>
+              <td class="duration" data-value="7371000000">7.371</td>
+              <td class="duration" data-value="7371000000">7.371</td>
+              <td class="duration" data-value="7371000000">7.371</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.orbitz.steps.Hooks.startTestFirefox()</td>
+              <td>1</td>
+              <td class="duration" data-value="9451000000">9.451</td>
+              <td class="duration" data-value="9451000000">9.451</td>
+              <td class="duration" data-value="9451000000">9.451</td>
+              <td class="passed">100.00%</td>
+            </tr>
+        </tbody>
+
+        <tfoot class="total">
+          <tr>
+            <td>27</td>
+            <td>68</td>
+            <td class="duration">5.245</td>
+            <td class="duration">1:17.041</td>
+            <td class="duration">5:56.718</td>
+            <td>Totals</td>
+          </tr>
+        </tfoot>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

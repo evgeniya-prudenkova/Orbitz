@@ -1,0 +1,16 @@
+-------------------------------------------------------------------------------
+Test set: com.orbitz.runners.TestRunnerFirefox
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 277.444 s <<< FAILURE! - in com.orbitz.runners.TestRunnerFirefox
+Firefox).Flight Booking Verification(Flight Booking Functionality   Time elapsed: 277.099 s  <<< ERROR!
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: (//*[@data-test-id='flight-operated'])[1]' (tried for 20 second(s) with 500 milliseconds interval)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+Unable to locate element: (//*[@data-test-id='flight-operated'])[1]
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MacBook-Pro-16.local', ip: '2603:7000:7e00:59:0:0:0:fc9%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_251'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 89.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210527174632, moz:geckodriverVersion: 0.29.1, moz:headless: false, moz:processID: 89001, moz:profile: /var/folders/qz/8ytd8bw52kv..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 20.3.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 604a1df3-4798-3c44-958a-7effa7d422a9
+*** Element info: {Using=xpath, value=(//*[@data-test-id='flight-operated'])[1]}
+
